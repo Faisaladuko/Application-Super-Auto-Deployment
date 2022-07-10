@@ -32,6 +32,8 @@ jobs:
           command: |
              cd backend
              npm install
+             npm audit fix
+             npm fund --silent
              npm run build
              exit 1
       - save_cache:
