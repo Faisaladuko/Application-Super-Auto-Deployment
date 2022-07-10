@@ -31,6 +31,7 @@ jobs:
           name: Back-end build
           command: |
              cd backend
+             npm install
              npm fund
              npm run build
              exit 1
@@ -64,6 +65,7 @@ jobs:
           name: Run backend-test
           command: |
              cd backend
+             npm install
              npm fund
              npm run test
              exit 1       
