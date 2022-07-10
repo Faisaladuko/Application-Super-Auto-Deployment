@@ -60,7 +60,7 @@ jobs:
       - Checkout
       - restore_cache:
           keys: [backend-test]
-        - run:
+      - run:
           name: Run backend-test
           command: |
              cd backend
